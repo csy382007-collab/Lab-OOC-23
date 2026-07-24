@@ -1,11 +1,25 @@
 
 #include <iostream>
+using namespace std;
+
 int main() {
-    int length = 5;
-    int width = 10;
-    int area = length * width;
-    int perimeter = 2 * (length + width);
-    std::cout << "The area of the rectangle is " << area << std::endl;
-    std::cout << "The perimeter of the rectangle is " << perimeter << std::endl;
+    float num1, num2;
+
+    cout << "Enter first number: ";
+    cin >> num1;
+
+    cout << "Enter second number: ";
+    cin >> num2;
+
+    cout << "\nAddition = " << num1 + num2 << endl;
+    cout << "Subtraction = " << num1 - num2 << endl;
+    cout << "Multiplication = " << num1 * num2 << endl;
+
+    if (num2 != 0) {
+        cout << "Division = " << num1 / num2 << endl;
+    } else {
+        cout << "Division is not possible (cannot divide by zero)." << endl;
+    }
+
     return 0;
 }
