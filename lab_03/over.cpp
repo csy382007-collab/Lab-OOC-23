@@ -1,13 +1,14 @@
 
 #include <iostream>
-int area (int);
-int area (int,int);
-float area (float);
+using namespace std;
+int area(int);
+int area(int,int);
+float area(float);
 int main()
 {
     cout<<"calling the area()function for computing the area of a square(side=5) - "<<area(5)<<"\n";
     cout<<"Callimg the area()function for computing the area of a rectangle(length=5,breadth=10) - "<<area(5,10)<<"\n";
-    cout<<"Calling the area()function for computing the area of a circle(radius=5.5)-"<<area(5.5);
+    cout<<"Calling the area()function for computing the area of a circle(radius=5.5)-"<<area(5.5f);
     return 0;
 }
 int area (int side)
